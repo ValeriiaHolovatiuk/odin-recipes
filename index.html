@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="title" content="Home page">
-    <meta property="url" content="https://valeriiaholovatiuk.github.io/odin-recipes/">
-    <meta property="imageURL" content="https://unsplash.com/photos/artichokes-are-arranged-on-a-white-tablecloth-UqlTt-bO9SA">
-        
-    <title>Project: Recipes | The Odin Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="title" content="Home page">
+  <meta property="url" content="https://valeriiaholovatiuk.github.io/odin-recipes/">
+  <meta property="imageURL"
+    content="https://unsplash.com/photos/artichokes-are-arranged-on-a-white-tablecloth-UqlTt-bO9SA">
+
+  <title>Project: Recipes | The Odin Project</title>
 </head>
+
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="recipes/en-us/HoneyGarlicSlowCookerChickenThighs.html">Honey-Garlic Slow Cooker Chicken Thighs</a></li>
-        <li><a href="recipes/en-us/bananaPuddingPie.html">Banana Pudding Pie</a></li>
-        <li><a href="recipes/en-us/worldsBestLasagna.html">World's Best Lasagna</a></li>
-    </ul>
+  <h1>Odin Recipes</h1>
+  <label for="languages">Choose the language:</label>
+  <select name="languages" id="languages">
+    <option value="en_us">English, United States</option>
+    <option value="uk_ua">Ukrainian, Ukraine</option>
+  </select>
+
+  <ul id="recipeLinks">
+  </ul>
+
+  <script>
+    const data = {
+      en_us: [
+        { name: 'Honey Garlic Slow Cooker Chicken Thighs', url: 'recipes/en-us/HoneyGarlicSlowCookerChickenThighs.html' },
+        { name: 'Banana Pudding Pie', url: 'recipes/en-us/bananaPuddingPie.html' },
+        { name: 'Worlds Best Lasagna', url: 'recipes/en-us/worldsBestLasagna.html' }
+      ],
+      uk_ua: [
+        { name: 'Honey Garlic Slow Cooked Chicken Thighs', url: 'recipes/uk-ua/HoneyGarlicSlowCookerChickenThighs.html' },
+        { name: 'Banana Pudding Pie', url: 'recipes/uk-ua/bananaPuddingPie.html' },
+        { name: 'Worlds Best Lasagna', url: 'recipes/uk-ua/worldsBestLasagna.html' }
+      ]
+    };
+
+    const dropdown = document.getElementById('languages');
+    const itemList = document.getElementById('recipeLinks');
+
+    function updateList() {
+      const selected = dropdown.value;
+      const items = data[selected];
+
+      // Clear current list
+      itemList.innerHTML = '';
+
+      // Add new list items
+      items.forEach(item => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = item.url;
+        a.textContent = item.name;
+        a.target = '_blank'; // open in new tab
+        li.appendChild(a);
+        itemList.appendChild(li);
+      });
+    }
+
+    // Update the list when the page loads and when dropdown changes
+    dropdown.addEventListener('change', updateList);
+    updateList(); // initialize on page load
+  </script>
 </body>
+
 </html>
