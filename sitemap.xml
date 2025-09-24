@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
+  <url>
+    <loc>https://valeriiaholovatiuk.github.io/odin-recipes/</loc>
+    <lastmod>2025-09-24</lastmod>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://valeriiaholovatiuk.github.io/odin-recipes/</loc>
-  <lastmod>2025-05-26T20:02:01+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/HoneyGarlicSlowCookerChickenThighs.html</loc>
-  <lastmod>2025-05-26T20:02:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/bananaPuddingPie.html</loc>
-  <lastmod>2025-05-26T20:02:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/worldsBestLasagna.html</loc>
-  <lastmod>2025-05-26T20:02:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <!-- English Recipes -->
+  <url>
+    <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/en-us/HoneyGarlicSlowCookerChickenThighs.html</loc>
+    <lastmod>2025-09-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/en-us/bananaPuddingPie.html</loc>
+    <lastmod>2025-09-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/en-us/worldsBestLasagna.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <priority>0.8</priority>
+  </url>
 
+  <!-- Ukrainian Recipes -->
+  <url>
+    <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/uk-ua/HoneyGarlicSlowCookerChickenThighs.html</loc>
+    <lastmod>2025-09-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/uk-ua/bananaPuddingPie.html</loc>
+    <lastmod>2025-09-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valeriiaholovatiuk.github.io/odin-recipes/recipes/uk-ua/worldsBestLasagna.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
